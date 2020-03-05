@@ -1,0 +1,15 @@
+on:
+  [push]
+jobs:
+  certmon:
+    runs-on: ubuntu-latest
+    name: Monitor Certs!
+    steps:
+    - name: Monitor cert step
+      id: certmon
+      uses: s1dequest/certmon-action@v0.1
+      with:
+        EV_PROXY: null
+        EV_SLACK-CHANNEL-ID: null
+        EV_BUILD-LOG-LINK: null
+        EV_SLACKHOOK: null
